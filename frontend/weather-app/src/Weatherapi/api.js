@@ -32,7 +32,6 @@ export const fetchWeatherByCityName = async (city) => {
 
 	// let url = `${API_URL}?q=${cityname}&appid=${API_KEY}`;
 
-	
 	// return await fetch(url,{mode:'no-cors'}, {
 	// 	headers: {
 	// 		"Content-Type": "application/json",

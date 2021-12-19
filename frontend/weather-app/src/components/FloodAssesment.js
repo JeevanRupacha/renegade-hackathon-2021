@@ -12,7 +12,7 @@ const FloodAssement = () => {
         {"id": 4, q: "Low Risk", "y": null , "n": null},
         {"id": 5, q: "Moderate Risk ", "y":null , "n": null},
         {"id": 6, q: "In your opinion what is the flood risk are where you live ?", "y":8, "n": 9},
-        {"id": 7, q: "Do you live near the river ? ", "y":10, "n": 11},
+        {"id": 7, q: "Do you live near the river ? ", "y": 10, "n": 11},
         {"id": 8, q: "Moderate Risk ", "y":null, "n": null},
         {"id": 9, q: "Minimal Risk", "y":null, "n": null},
         {"id": 10, q: "In you opinion what is the flood risk area where you live ?", "y":12, "n": 13},

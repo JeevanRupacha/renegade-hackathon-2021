@@ -1,5 +1,4 @@
-const LEFT = 0;
-const RIGHT = 1;
+
 
 class Node{
   constructor()
@@ -62,14 +61,6 @@ class TreeNode {
   
     return null
   }
-
-
-  traverse()
-  {
-    console.log("Node is ", this.node)
-  }
-
-  
 
 
 }

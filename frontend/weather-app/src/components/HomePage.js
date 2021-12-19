@@ -18,33 +18,26 @@ export default function HomePage() {
   const [lat, setLat] = useState()
   const [long, setLong] = useState()
 
-  const cityName = "Kathmandu"
+  const cityName = "New York"
 
   const weatherData = useQuery(["getWeatherByCity", cityName], fetchWeatherByCity)
   
 
   const alertTempMax = 30 
-  const alertTempMin = 5 
+  const alertTempMin = 20
 
   const [temp, setTemp] = useState(0.0)
 
   if(weatherData.data != null)
   {
-    console.log("TEmp data ", weatherData.data)
+    console.log("Temp data ", weatherData.data)
     // setTemp(weatherData.data.main.temp)
   }
 
 
   console.log("temperature ius ", temp)
 
-  if(weatherData.data != null)
-  {
-    if(weatherData.data.main.temp < alertTempMin && weatherData.data.main.temp < alertTempMin)
-    {
-        //send the alert 
-        alert("Temparature is more than 30 or less than 5")
-    }
-  }
+  
 
 
   const {data, error} = useQuery("country", fetchCountires)
@@ -72,7 +65,17 @@ export default function HomePage() {
     // {
     //   setTemp(weatherData.data.main.temp)
     // }
-  })
+
+    if(weatherData.data != null)
+      {
+        console.log("tempTEst ", weatherData.data.main.temp)
+        if( weatherData.data.main.temp < alertTempMin ||  weatherData.data.main.temp < alertTempMin)
+        {
+            //send the alert 
+            alert("Temparature is more than 30 or less than 5")
+        }
+      }
+  },[])
 
 
   function displayLocation(latitude,longitude){
@@ -107,7 +110,9 @@ export default function HomePage() {
 
     return (
       <>
+        <div className="">
         <Header/>
+        </div>
 
         <Search/>
 
