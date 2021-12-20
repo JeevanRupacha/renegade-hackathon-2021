@@ -11,6 +11,7 @@ import { fetchCountires } from '../CountryApi/api';
 import AlertUser from './AlertSystem/AlertUser';
 import { fetchWeatherByCity } from '../Weatherapi/api';
 
+
 export default function HomePage() {
   const [name, setName] = useState("jeevan")
   console.log(name)
@@ -75,7 +76,7 @@ export default function HomePage() {
             alert("Temparature is more than 30 or less than 5")
         }
       }
-  },[])
+  }, [])
 
 
   function displayLocation(latitude,longitude){

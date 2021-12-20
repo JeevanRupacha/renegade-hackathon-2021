@@ -11,10 +11,11 @@ const LocationForm = () => {
       {title : "City", inputType : "String"},
     ]
 
-    const staticInput = [
+  const staticInput = [
         {title : "State ", inputType : "String"},
         {title : "City", inputType : "String"},
-    ]
+  ]
+  
 
   const [formData, setFormData] = useState({"country": ""})
   const inputRef = React.useRef([])

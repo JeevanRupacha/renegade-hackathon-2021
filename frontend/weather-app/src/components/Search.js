@@ -6,7 +6,6 @@ const Search = (props) => {
 
 	const inputRef = React.useRef(null)
 
-
 	const onSubmit = (e) => {
 		e.preventDefault()
 		if (inputRef.current.value == "") return;

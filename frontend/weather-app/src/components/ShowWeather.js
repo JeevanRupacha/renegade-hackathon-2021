@@ -10,6 +10,8 @@ const ShowWeather = () => {
 
     const cityName = "Lalitpur"
 
+    
+
     const {data, isError, error} = useQuery(["getWeatherByCity", cityName], fetchWeatherByCity)
     
     console.log("weather API DAT", data)
